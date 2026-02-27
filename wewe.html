@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blackrock Sports Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth;}
+
+body{
+    margin:0;
+    font-family:Roboto,sans-serif;
+    background:linear-gradient(180deg,#111,#2a1500);
+    color:white;
+}
+
+header{
+    background:black;
+    color:orange;
+    padding:60px;
+    text-align:center;
+    font-family:'Bebas Neue',cursive;
+}
+
+nav{
+    text-align:center;
+    background:#111;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav button{
+    margin:6px;
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    background:orange;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:#222;
+    min-width:220px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.6);
+    border-radius:12px;
+    z-index:1000;
+}
+
+.dropdown-content button{
+    width:100%;
+    background:none;
+    color:white;
+    text-align:left;
+    padding:12px;
+    border:none;
+    cursor:pointer;
+}
+
+.dropdown-content button:hover{background:#333;}
+
+.show{display:block;}
+
+section{
+    max-width:900px;
+    margin:40px auto;
+    background:#111;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.5);
+    display:none;
+}
+
+section.active{display:block;}
+
+h2{
+    color:orange;
+    font-family:'Bebas Neue',cursive;
+    font-size:40px;
+}
+
+.drill{
+    border-bottom:1px solid #333;
+    padding:28px 0;
+}
+
+.drill h3{color:orange;}
+
+.drill p{line-height:2;}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:black;
+    color:orange;
+    margin-top:80px;
+}
+</style>
+</head>
+
+<body>
+<header>
+    <h1 style="font-size:65px">🏀 Blackrock Sports Academy</h1>
+    <p style="font-size:24px">Youth Pipeline Development — Rugby | Basketball | Triathlon</p>
+</header>
+
+<nav>
+    <button onclick="showSection('home')">Home</button>
+
+    <div class="dropdown">
+        <button onclick="toggleDropdown('drillMenu')">Basketball Training ▾</button>
+        <div id="drillMenu" class="dropdown-content">
+            <button onclick="showSection('ballhandling')">Ball Handling</button>
+            <button onclick="showSection('team')">Team Training</button>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="toggleDropdown('moreMenu')">⋮</button>
+        <div id="moreMenu" class="dropdown-content">
+            <button onclick="showSection('contact')">Contact</button>
+            <button onclick="alert('Share link: Copy URL from browser')">Share</button>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="active">
+<h2>About Blackrock Sports</h2>
+<p style="line-height:2;font-size:22px">
+Blackrock Sports is a youth pipeline athletic academy designed to discover, nurture, and develop
+future sporting talent across rugby, basketball, and triathlon disciplines. The academy hosts
+structured training tours, intensive development camps, and long-term performance mentorship
+programs focused on building strong athletes physically, mentally, and technically.
+
+Our training philosophy is built on progressive athlete development. We emphasize disciplined
+practice habits, intelligent movement mechanics, and competitive sports mindset building. The
+academy supports young athletes who are serious about improving their sporting potential over
+long-term growth cycles rather than short-term performance results.
+
+Blackrock Sports also promotes teamwork leadership, character development, endurance conditioning,
+and tactical sports understanding required for high-level youth athletic pathways.
+</p>
+</section>
+
+<section id="ballhandling">
+<h2>Ball Handling Mastery</h2>
+
+<div class="drill">
+<h3>Crossover Control</h3>
+<p>
+Perform controlled low crossover dribbling for at least three minutes continuously.
+Recommended structure: 3–5 sets depending on player conditioning level, with 30–45 seconds
+rest between sets. The purpose of this drill is to improve offensive stability when facing
+pressure defence. Players should focus on maintaining low body posture, rhythmical ball bounce
+control, and protecting the basketball using body positioning while simulating real match
+defensive scenarios. Mastering this movement builds confidence when initiating attacks and
+reduces turnover risk during competitive play.
+</p>
+</div>
+
+<div class="drill">
+<h3>Between Legs Combo</h3>
+<p>
+Execute alternating crossover and between-the-legs dribbling patterns for approximately
+2–3 minutes per set. Perform 4 sets for advanced development or 2–3 sets for beginners.
+This movement trains coordination between upper and lower body mechanics while improving
+spatial awareness during offensive penetration. Maintain a low athletic stance, soft hand
+contact with the ball, and smooth rhythm transitions. This drill helps players become more
+unpredictable when attacking defenders in one-on-one situations.
+</p>
+</div>
+
+<div class="drill">
+<h3>Behind Back Control</h3>
+<p>
+Practice behind-the-back dribble transfers for about 2 minutes per set, repeating 3–5 sets
+based on fitness level. Start at moderate speed to establish rhythm before increasing pace.
+Focus on ball shielding using body rotation, controlled bounce height, and precise hand
+release timing. This drill is designed to develop advanced handling mechanics for operating
+in tight defensive spaces and improving overall offensive versatility during matches.
+</p>
+</div>
+
+<div class="drill">
+<h3>Figure Eight Dribbling</h3>
+<p>
+Move the basketball around both legs in continuous figure-eight motion for 2 minutes per set.
+Complete 3–4 sets with short rest intervals. This exercise improves wrist flexibility, bilateral
+hand coordination, and multi-directional ball control ability. Players should aim for smooth
+ball flow without unnecessary force or irregular bounce height changes.
+</p>
+</div>
+
+<div class="drill">
+<h3>Speed Stationary Dribble</h3>
+<p>
+Dribble the basketball as fast as possible while staying in one position for 45–60 seconds per
+set. Perform 4–6 sets depending on training intensity. Alternate between high tempo bouncing
+and controlled low bounce rhythm. The goal is to enhance hand reaction speed, neural coordination,
+and offensive burst readiness under pressure game environments.
+</p>
+</div>
+
+<div class="drill">
+<h3>Weak Hand Training</h3>
+<p>
+Use only the non-dominant hand for ball control drills lasting 3 minutes per set.
+Repeat 3–4 sets. This training improves ambidextrous offensive capability, reduces defensive
+predictability, and builds confidence when attacking from the weak side. Players should focus
+on maintaining stable body balance while forcing themselves to rely on their weaker hand control.
+</p>
+</div>
+
+<div class="drill">
+<h3>Hesitation Explosion Drill</h3>
+<p>
+Perform hesitation movement pauses followed by sudden acceleration bursts. Execute 5–8
+repetitions per set and complete 3 sets total. This drill simulates deceptive offensive tactics
+used to create separation from defenders. Focus on momentum control, body fake execution,
+and explosive forward movement immediately after hesitation timing.
+</p>
+</div>
+
+<div class="drill">
+<h3>Cone Direction Change</h3>
+<p>
+Set up three cones on the court and practice sharp cutting dribble movements between them.
+Perform 5 laps per set and complete 3–5 sets depending on skill level. Concentrate on quick
+foot planting, secure ball protection, and controlled body lean during directional transitions.
+This drill develops agility, offensive unpredictability, and game-like movement mechanics.
+</p>
+</div>
+</section>
+
+<section id="team">
+<h2>Team Training (Running + Skill Conditioning)</h2>
+
+<div class="drill">
+<h3>Acceleration Sprint Starts</h3>
+<p>
+Begin from an athletic stance and explode forward into a 10 meter sprint distance.
+Perform 4–6 repetitions per set and complete 3 sets total depending on conditioning level.
+Rest 45–60 seconds between sets. This training improves first-step power generation,
+arm swing coordination, and forward body lean mechanics required for explosive offensive
+and defensive transition movement during competitive matches.
+</p>
+</div>
+
+<div class="drill">
+<h3>Ball Carry Sprint</h3>
+<p>
+Sprint approximately 20 meters while maintaining light dribbling control of the basketball.
+Repeat 5 repetitions per set and complete 3 sets total. This drill combines locomotion speed
+with ball handling coordination under movement stress. The objective is to develop transition
+attack efficiency, maintain dribble rhythm during running, and improve fatigue resistance
+when performing fast break offensive actions.
+</p>
+</div>
+
+<div class="drill">
+<h3>Full Court Shuttle Run</h3>
+<p>
+Perform continuous shuttle running across the full court distance for endurance development.
+Complete 6 shuttle cycles per set and repeat 3 sets total. Rest 1 minute between sets.
+Focus on maintaining sprint velocity consistency, rapid directional transition ability,
+and cardiovascular stamina required for high-level match competition performance.
+</p>
+</div>
+
+<div class="drill">
+<h3>High Knee Running Drill</h3>
+<p>
+Perform high knee running cycles for 30 seconds per repetition and complete 4–5 repetitions
+per set. Execute 3 sets total. This exercise activates hip flexor power, improves stride
+frequency mechanics, and supports overall sprint acceleration efficiency.
+</p>
+</div>
+
+<div class="drill">
+<h3>Lateral Defensive Slide Conditioning</h3>
+<p>
+Execute defensive lateral slide movements for 20 seconds per repetition and repeat 5 times
+per set. Complete 3 sets total. Maintain a low defensive stance, stable hip alignment, and
+quick reactive footwork. This drill builds defensive endurance, balance stability, and
+movement economy during prolonged match defence scenarios.
+</p>
+</div>
+
+<div class="drill">
+<h3>Reactive Whistle Sprint</h3>
+<p>
+Start sprint movement only when an auditory or visual signal is given. Perform 6–8 reactions
+per set and complete 3 sets total. This training improves reaction speed, game awareness,
+and explosive initiation response under unpredictable match conditions.
+</p>
+</div>
+
+<div class="drill">
+<h3>Endurance Court Lap</h3>
+<p>
+Jog continuously around the court perimeter for extended duration lasting 3–5 minutes per set.
+Complete 3 sets if conditioning level allows. This builds aerobic capacity, stamina reserves,
+and fatigue resistance necessary for tournament-level athletic performance and late game
+survival under pressure.
+</p>
+</div>
+
+<div class="drill">
+<h3>Explosive First Step Jump Start</h3>
+<p>
+From stationary stance, practice explosive forward movement initiation combined with small
+vertical jump activation. Perform 5 repetitions per set and complete 3 sets total. This drill
+improves neuromuscular power production, transition attack launch speed, and overall burst
+capability.
+</p>
+</div>
+
+<div class="drill">
+<h3>Transition Attack Repeat Run</h3>
+<p>
+Simulate fast break transition movement by sprinting repeatedly between court zones. Perform
+6 repetitions per set and complete 3 sets total. Focus on acceleration consistency, recovery
+control, and offensive transition execution under match fatigue conditions.
+</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Blackrock Sports</h2>
+<p style="font-size:22px;line-height:2">
+Email: blackrocksports@email.com<br>
+Location: Your court location
+</p>
+</section>
+
+<footer>
+Blackrock Sports Academy © 2026
+</footer>
+
+<script>
+function showSection(id){
+document.querySelectorAll('section').forEach(sec=>sec.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+toggleDropdown(null);
+}
+
+function toggleDropdown(id){
+if(!id){
+document.querySelectorAll('.dropdown-content').forEach(el=>el.classList.remove('show'));
+return;
+}
+let menu=document.getElementById(id);
+menu.classList.toggle('show');
+}
+
+window.onclick=function(e){
+if(!e.target.matches('button')){
+document.querySelectorAll('.dropdown-content').forEach(el=>el.classList.remove('show'));
+}
+}
+</script>
+
+</body>
+</html>
